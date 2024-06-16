@@ -14,6 +14,8 @@
 
 ### 2
 
+[![asciicast](https://asciinema.org/a/VgLPtTQT7FFYhiBuRhG1DXRQJ.svg)](https://asciinema.org/a/VgLPtTQT7FFYhiBuRhG1DXRQJ)
+
 ### 3
 
 ### 4
