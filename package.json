@@ -5,9 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
-  "author": "",
+  "author": "vitalijk078",
   "bin": {
     "gendiff": "bin/gendiff.js"
   },
@@ -16,5 +16,13 @@
     "commander": "^12.1.0",
     "fs": "^0.0.1-security",
     "lodash": "^4.17.21"
-  }
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "babel-jest": "^29.7.0",
+    "eslint": "^9.4.0",
+    "jest": "^29.7.0"
+  },
+  "keywords": []
 }
