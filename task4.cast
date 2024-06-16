@@ -1,0 +1,12 @@
+{"version": 2, "width": 156, "height": 19, "timestamp": 1718571652, "env": {"SHELL": "/bin/zsh", "TERM": "xterm-256color"}}
+[0.355749, "o", "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                                                                           \r \r"]
+[0.356173, "o", "\r\u001b[0m\u001b[27m\u001b[24m\u001b[Jvitalijkovalev@MacBook-Pro-Vitalij-2 frontend-project-46 % \u001b[K\u001b[?2004h"]
+[4.721043, "r", "156x42"]
+[4.721212, "o", "\r\r\u001b[0m\u001b[27m\u001b[24m\u001b[Jvitalijkovalev@MacBook-Pro-Vitalij-2 frontend-project-46 % "]
+[5.858028, "o", "\u001b[7mgendiff --format plain file1.json file2.json\u001b[27m"]
+[7.797378, "o", "\u001b[44D\u001b[27mg\u001b[27me\u001b[27mn\u001b[27md\u001b[27mi\u001b[27mf\u001b[27mf\u001b[27m \u001b[27m-\u001b[27m-\u001b[27mf\u001b[27mo\u001b[27mr\u001b[27mm\u001b[27ma\u001b[27mt\u001b[27m \u001b[27mp\u001b[27ml\u001b[27ma\u001b[27mi\u001b[27mn\u001b[27m \u001b[27mf\u001b[27mi\u001b[27ml\u001b[27me\u001b[27m1\u001b[27m.\u001b[27mj\u001b[27ms\u001b[27mo\u001b[27mn\u001b[27m \u001b[27mf\u001b[27mi\u001b[27ml\u001b[27me\u001b[27m2\u001b[27m.\u001b[27mj\u001b[27ms\u001b[27mo\u001b[27mn"]
+[7.797486, "o", "\u001b[?2004l\r\r\n"]
+[8.115039, "o", "Property 'common.follow' was added with value: false\r\nProperty 'common.setting2' was removed\r\nProperty 'common.setting3' was updated. From true to null\r\nProperty 'common.setting4' was added with value: 'blah blah'\r\nProperty 'common.setting5' was added with value: [complex value]\r\nProperty 'common.setting6.doge.wow' was updated. From '' to 'so much'\r\nProperty 'common.setting6.ops' was added with value: 'vops'\r\nProperty 'group1.baz' was updated. From 'bas' to 'bars'\r\nProperty 'group1.nest' was updated. From [complex value] to 'str'\r\nProperty 'group2' was removed\r\nProperty 'group3' was added with value: [complex value]\r\n"]
+[8.119762, "o", "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                                                                           \r \r"]
+[8.119804, "o", "\r\u001b[0m\u001b[27m\u001b[24m\u001b[Jvitalijkovalev@MacBook-Pro-Vitalij-2 frontend-project-46 % \u001b[K\u001b[?2004h"]
+[11.137651, "o", "\u001b[?2004l\r\r\n"]
