@@ -1,0 +1,91 @@
+{
+  "type": "root",
+  "child": [
+    {
+      "type": "nested",
+      "common": [
+        {
+          "type": "unchanged",
+          "key": "setting1",
+          "value": "Value 1"
+        },
+        {
+          "type": "unchanged",
+          "key": "setting2",
+          "value": 200
+        },
+        {
+          "type": "unchanged",
+          "key": "setting3",
+          "value": true
+        },
+        {
+          "type": "nested",
+          "setting6": [
+            {
+              "type": "nested",
+              "doge": [
+                {
+                  "type": "unchanged",
+                  "key": "wow",
+                  "value": ""
+                }
+              ]
+            },
+            {
+              "type": "changed",
+              "key": "key",
+              "oldValue": "value",
+              "newValue": "value1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "nested",
+      "group1": [
+        {
+          "type": "unchanged",
+          "key": "baz",
+          "value": "bas"
+        },
+        {
+          "type": "unchanged",
+          "key": "foo",
+          "value": "bar"
+        },
+        {
+          "type": "nested",
+          "nest": [
+            {
+              "type": "unchanged",
+              "key": "key",
+              "value": "value"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "nested",
+      "group2": [
+        {
+          "type": "unchanged",
+          "key": "abc",
+          "value": 12345
+        },
+        {
+          "type": "nested",
+          "deep": [
+            {
+              "type": "unchanged",
+              "key": "id",
+              "value": 45
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
