@@ -1,10 +1,11 @@
-import yaml from ('js-yaml');
+import yaml from 'js-yaml';
 
 const parser = (data, format) => {
   switch (format) {
     case 'json':
       return JSON.parse(data);
     case 'yaml':
+      return yaml.load(data);
     case 'yml':
       return yaml.load(data);
     default:
@@ -12,7 +13,4 @@ const parser = (data, format) => {
   }
 };
 
-module.exports = parser;
-
-
-export default parser;ser;ser;
+export default parser;

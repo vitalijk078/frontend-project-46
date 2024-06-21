@@ -8,26 +8,14 @@
 
 ### Пример работы:
 
-### 1 Сравнение плоских файлов (JSON)
+### 1
 
 [![asciicast](https://asciinema.org/a/NmRDQw75cLxJvUKwO16aWjY7H.svg)](https://asciinema.org/a/NmRDQw75cLxJvUKwO16aWjY7H)
 
-### 2 Сравнение плоских файлов (yaml)
+### 2
 
 [![asciicast](https://asciinema.org/a/VgLPtTQT7FFYhiBuRhG1DXRQJ.svg)](https://asciinema.org/a/VgLPtTQT7FFYhiBuRhG1DXRQJ)
 
-### 3 Рекурсивное сравнение
+### 3
 
-[![asciicast](https://asciinema.org/a/SKaJvwYeXcxUo1hdVORuQAMpC.svg)](https://asciinema.org/a/SKaJvwYeXcxUo1hdVORuQAMpC)
-
-### 4 Плоский формат
-
-[![asciicast](https://asciinema.org/a/Bjqe76fx7xB6alP4K8Re8xgsJ.svg)](https://asciinema.org/a/Bjqe76fx7xB6alP4K8Re8xgsJ)
-
-### 5 Вывод в json
-
-[![asciicast](https://asciinema.org/a/IJdrOYW5BcjdUNZA5VciH028K.svg)](https://asciinema.org/a/IJdrOYW5BcjdUNZA5VciH028K)
-
-### TESTS
-
-[![asciicast](https://asciinema.org/a/CfJbf4h7EvtNWv6a2PL6iUHRN.svg)](https://asciinema.org/a/CfJbf4h7EvtNWv6a2PL6iUHRN)
+### 4
