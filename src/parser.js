@@ -13,3 +13,6 @@ const parser = (data, format) => {
 };
 
 module.exports = parser;
+
+
+export default parser;
