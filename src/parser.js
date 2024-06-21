@@ -1,4 +1,4 @@
-const yaml = require('js-yaml');
+import yaml from ('js-yaml');
 
 const parser = (data, format) => {
   switch (format) {
@@ -15,4 +15,4 @@ const parser = (data, format) => {
 module.exports = parser;
 
 
-export default parser;
+export default parser;ser;ser;
