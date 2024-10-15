@@ -1,7 +1,7 @@
 import path from 'path';
 import fs from 'fs';
 import _ from 'lodash';
-import parser from 'srs/parser.js'
+import parser from 'src/parser.js'
 
 const readFile = (filepath) => {
     const pathF = path.resolve(process.cwd(), filepath);
