@@ -6,7 +6,7 @@ import parser from './src/parser.js'
 const readFile = (filepath) => {
     const pathF = path.resolve(process.cwd(), filepath);
     const file = fs.readFileSync(pathF, 'utf8');
-    const format = filepath.split('.')[1];
+    const format = filepath.split('')[1];
     return parser(file ,format)
 }
 
