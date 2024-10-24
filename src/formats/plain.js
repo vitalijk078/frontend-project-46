@@ -10,19 +10,19 @@ const formatTree = (tree, path = '') => tree
   .filter(({ type }) => type !== 'unchanged')
   .map((node) => {
     switch (node.type) {
-      case 'added': {
-        return `Property '${path}${node.key}' was added with value: ${stringify(node.value)}`;
-      }
-      case 'changed': {
-        return `Property '${path}${node.key}' was updated. From ${stringify(node.value1)} to ${stringify(
-          node.value2,
-        )}`;
-      }
-      case 'nested': {
-        return formatTree(node.children, `${path}${node.key}.`);
-      }
-      default:
-        return `Property '${path}${node.key}' was removed`;
+    case 'added': {
+      return `Property '${path}${node.key}' was added with value: ${stringify(node.value)}`;
+    }
+    case 'changed': {
+      return `Property '${path}${node.key}' was updated. From ${stringify(node.value1)} to ${stringify(
+        node.value2,
+      )}`;
+    }
+    case 'nested': {
+      return formatTree(node.children, `${path}${node.key}.`);
+    }
+    default:
+      return `Property '${path}${node.key}' was removed`;
     }
   })
   .join('\n');
