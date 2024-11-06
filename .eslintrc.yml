@@ -13,6 +13,9 @@ parserOptions:
   ecmaVersion: latest
 
 rules:
+  indent:
+    - error
+    - 4
   no-console: 0
   import/extensions:
     - error
