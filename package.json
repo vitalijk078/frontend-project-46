@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/vitalijk078/frontend-project-46/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/vitalijk078/frontend-project-46/actions)",
   "main": "src/index.js",
-  "type": "module",
   "scripts": {
     "test": "jest"
   },
