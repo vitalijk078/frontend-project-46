@@ -21,24 +21,24 @@ const stringify = (data, depth) => {
 const formatTree = (tree, depth = 1) => tree
   .map((node) => {
     switch (node.type) {
-    case 'added': {
-      return `${indent(depth, false)}+ ${node.key}: ${stringify(node.value, depth)}`;
-    }
-    case 'deleted': {
-      return `${indent(depth, false)}- ${node.key}: ${stringify(node.value, depth)}`;
-    }
-    case 'changed': {
-      return [
-        `${indent(depth, false)}- ${node.key}: ${stringify(node.value1, depth)}`,
-        `${indent(depth, false)}+ ${node.key}: ${stringify(node.value2, depth)}`,
-      ].join('\n');
-    }
-    case 'nested': {
-      const children = formatTree(node.children, depth + 1).join('\n');
-      return `${indent(depth)}${node.key}: {\n${children}\n${indent(depth)}}`;
-    }
-    default:
-      return `${indent(depth)}${node.key}: ${stringify(node.value, depth)}`;
+      case 'added': {
+        return `${indent(depth, false)}+ ${node.key}: ${stringify(node.value, depth)}`;
+      }
+      case 'deleted': {
+        return `${indent(depth, false)}- ${node.key}: ${stringify(node.value, depth)}`;
+      }
+      case 'changed': {
+        return [
+          `${indent(depth, false)}- ${node.key}: ${stringify(node.value1, depth)}`,
+          `${indent(depth, false)}+ ${node.key}: ${stringify(node.value2, depth)}`,
+        ].join('\n');
+      }
+      case 'nested': {
+        const children = formatTree(node.children, depth + 1).join('\n');
+        return `${indent(depth)}${node.key}: {\n${children}\n${indent(depth)}}`;
+      }
+      default:
+        return `${indent(depth)}${node.key}: ${stringify(node.value, depth)}`;
     }
   });
 
