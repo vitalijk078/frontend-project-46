@@ -2,10 +2,9 @@ import _ from 'lodash';
 
 const getSortedKeys = (data1, data2) => _.sortBy(_.union(_.keys(data1), _.keys(data2)));
 
-
-const buildNode = (key, type, value = null, value1 = null, value2 = null, children = null) => {
-  return { key, type, value, value1, value2, children };
-};
+const buildNode = (key, type, value = null, value1 = null, value2 = null, children = null) => ({
+  key, type, value, value1, value2, children,
+});
 
 const getDifference = (data1, data2) => {
   const sortedKeys = getSortedKeys(data1, data2);

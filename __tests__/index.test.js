@@ -1,34 +1,34 @@
 import { expect, test } from '@jest/globals';
-
 import { readFileSync } from 'node:fs';
 import formatter from '../src/formats/index.js';
-
 import diffEngine from '../src/index.js';
 import parser from '../src/parser.js';
 
+// Чтение результатов
 const stylishResult = readFileSync('__fixtures__/expected.stylish.txt', 'utf-8');
 const plainResult = readFileSync('__fixtures__/expected.plain.txt', 'utf-8');
 const jsonResult = JSON.stringify(JSON.parse(readFileSync('__fixtures__/expected.json.txt', 'utf-8')), ' ', 2);
 
-test('testing stylish nested', () => {
-  expect(diffEngine('__fixtures__/file1.json', '__fixtures__/file2.json')).toBe(stylishResult);
-  expect(diffEngine('__fixtures__/file1.yaml', '__fixtures__/file2.yaml')).toBe(stylishResult);
-  expect(diffEngine('__fixtures__/file1.yml', '__fixtures__/file2.yml')).toBe(stylishResult);
-});
+// Общее для всех тестов расширение файлов
+const extensions = ['json', 'yaml', 'yml'];
 
-test('testing plain nested', () => {
-  expect(diffEngine('__fixtures__/file1.json', '__fixtures__/file2.json', 'plain')).toBe(plainResult);
-  expect(diffEngine('__fixtures__/file1.yaml', '__fixtures__/file2.yaml', 'plain')).toBe(plainResult);
-  expect(diffEngine('__fixtures__/file1.yml', '__fixtures__/file2.yml', 'plain')).toBe(plainResult);
-});
+// Параметризованный тест для всех форматов
+const formats = [
+  { format: 'stylish', expected: stylishResult },
+  { format: 'plain', expected: plainResult },
+  { format: 'json', expected: jsonResult },
+];
 
-test('testing json nested', () => {
-  expect(diffEngine('__fixtures__/file1.json', '__fixtures__/file2.json', 'json')).toBe(jsonResult);
-  expect(diffEngine('__fixtures__/file1.yaml', '__fixtures__/file2.yaml', 'json')).toBe(jsonResult);
-  expect(diffEngine('__fixtures__/file1.yml', '__fixtures__/file2.yml', 'json')).toBe(jsonResult);
+describe.each(formats)('testing %s nested', ({ format, expected }) => {
+  test.each(extensions)('compare %s files', (extension) => {
+    const file1 = `__fixtures__/file1.${extension}`;
+    const file2 = `__fixtures__/file2.${extension}`;
+
+    expect(diffEngine(file1, file2, format)).toBe(expected);
+  });
 });
 
 test('should be errors', () => {
-  expect(() => (parser('randomdata', 'whoops'))).toThrow('not supported!');
-  expect(() => (formatter('randomdata', 'whoops'))).toThrow('not supported!');
+  expect(() => parser('randomdata', 'whoops')).toThrow('not supported!');
+  expect(() => formatter('randomdata', 'whoops')).toThrow('not supported!');
 });
