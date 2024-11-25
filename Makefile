@@ -5,6 +5,7 @@ lint:
 lint-fix:
 	npx eslint --fix .
 test:
-	npm test
+	npm run test -- --coverage
 gendiff:
 	node bin/gendiff.js
+
