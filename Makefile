@@ -8,4 +8,6 @@ test:
 	npm run test -- --coverage
 gendiff:
 	node bin/gendiff.js
+test-coverage:
+	npm run test -- --coverage
 
